@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Cheat Sheet</title>
+</head>
+
+<body>
+
+
+    <header>  
+        <h1>Cheat Sheet<aside>by&colon; João Barros</aside></h1>
+    </header>
+
+    <main>
+        <!-- Start of Table section -->
+        <table>
+            <caption>Position Property</caption>
+            
+            <thead>
+              <tr>
+                <td colspan="3">The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left properties determine the final location of positioned elements.</td>
+              </tr>
+              <tr>
+                <th scope="row">Type</th>
+                <th scope="row">Value</th>
+                <th scope="row">Property Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="type">Static</td>
+                <td>The top, right, bottom, left, and z-index properties have no effect.</td>
+                <td>The element is positioned according to the normal flow of the document.<br><span>This is the default value.</span></td>
+              </tr>
+              <tr>
+                <td class="type">Relative</td>
+                <td>top, right, bottom, and left</td>
+                <td>Positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static</td>
+              </tr>
+              <tr>
+                <td class="type">Absolute</td>
+                <td>top, right, bottom, and left</td>
+                <td>Removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. </td>
+              </tr>
+              <tr>
+                <td class="type">Fixed</td>
+                <td>top, right, bottom, and left</td>
+                <td>Removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport</td>
+              </tr>
+              <tr>
+                <td class="type">Sticky</td>
+                <td>top, right, bottom, and left</td>
+                <td>Positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="3">Other Positional Properties</th>
+                </tr>
+                <tr>
+                    <th scope="col">Float</th>
+                    <td>left, right, none</td>
+                    <td>The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning).</td>
+                </tr>
+                <tr>
+                    <th scope="col">Display</th>
+                    <td>block, inline-block, none, flex, grid</td>
+                    <td>The display CSS property sets whether an element is treated as a block or inline box and the layout used for its children, such as flow layout, grid or flex.</td>
+                </tr>
+                <tr>
+                    <th scope="col">z-index</th>
+                    <td colspan="2">Sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.</td>
+                </tr>
+            </tfoot>
+    </table>
+    
+    <!-- End of table section -->
+    </main>
+</body>
+</html>
